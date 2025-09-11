@@ -1,0 +1,124 @@
+/* Base (Mobile first) */
+.education {
+    margin-top: 9%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    border-radius: 3%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.education-nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.education-nav span {
+    color: rgba(156,53,132,255);
+}
+
+.education-nav h2 {
+    font-size: 28px;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    padding-left: 0;
+}
+
+.education-nav p {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.education-header {
+    width: 90%;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.education-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.education-header img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.education-header:hover {
+    box-shadow: 5px 5px 10px rgba(156,53,132,255);
+    transform: scale(1.03);
+}
+
+/* --- Tablet Screens (≥768px) --- */
+@media (min-width: 768px) {
+    .education-nav h2 {
+        font-size: 34px;
+    }
+
+    .education-nav p {
+        font-size: 18px;
+        padding: 0 40px;
+    }
+
+    .education-content {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 0 40px;
+    }
+
+    .education-header {
+        max-width: 220px;
+    }
+
+    .education-header h3 {
+        font-size: 18px;
+    }
+}
+
+/* --- Desktop / Laptop Screens (≥1024px) --- */
+@media (min-width: 1024px) {
+    .education-nav h2 {
+        font-size: 40px;
+    }
+
+    .education-nav p {
+        font-size: 20px;
+        padding: 0 50px;
+    }
+
+    .education-content {
+        gap: 40px;
+        padding: 0 100px;
+    }
+
+    .education-header {
+        max-width: 250px;
+    }
+
+    .education-header h3 {
+        font-size: 20px;
+    }
+}

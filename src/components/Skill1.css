@@ -1,0 +1,243 @@
+.skill {
+  position: relative;
+  background: black;
+  width: 100%;
+  min-height: 100vh; /* full screen */
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center horizontally */
+  justify-content: flex-start; /* stack content downward */
+  text-align: center;
+  padding: 40px 20px;/* Base (Mobile first) */
+.skill {
+    position: relative;
+    background: black;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.skill h2 {
+    font-size: 28px;
+    color: white;
+    margin: 20px 0;
+}
+
+.skill span {
+    color: rgba(156,53,132,255);
+    display: inline-block;
+    text-align: center;
+}
+
+.skill p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+    margin-top: 12%;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.skill-box {
+    border: 0.1px solid rgba(124, 65, 36, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    width: 90%; /* responsive width for small screens */
+    max-width: 250px;
+    box-shadow: 5px 5px 10px rgba(156,53,132,255),
+                -10px -10px 20px rgba(25, 17, 13, 0.5);
+    transition: all 0.3s ease;
+    animation: floatIcon 2s ease-in-out infinite;
+}
+
+.skill-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 15px 15px 30px rgba(156,53,132,255),
+                5px 5px 10px rgba(124, 65, 36, 0.5);
+}
+
+.skill-box h3 {
+    text-align: center;
+}
+
+.skill-box ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.skill-box ul li {
+    margin: 0.4rem 0;
+    position: relative;
+    padding-left: 15px;
+}
+
+.skill-box ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+/* --- Tablet Screens (≥768px) --- */
+@media (min-width: 768px) {
+    .skill h2 {
+        font-size: 34px;
+    }
+
+    .skill p {
+        font-size: 16px;
+        padding: 0 40px;
+    }
+
+    .skill-list {
+        gap: 60px;
+    }
+
+    .skill-box {
+        width: 220px;
+        max-width: 250px;
+    }
+}
+
+/* --- Desktop / Laptop (≥1024px) --- */
+@media (min-width: 1024px) {
+    .skill h2 {
+        font-size: 40px;
+    }
+
+    .skill p {
+        font-size: 20px;
+        padding: 0 50px;
+    }
+
+    .skill-list {
+        gap: 70px;
+    }
+
+    .skill-box {
+        width: 250px;
+        padding: 25px;
+    }
+
+    .skill-box h3 {
+        font-size: 20px;
+    }
+
+    .skill-box ul li {
+        font-size: 16px;
+    }
+}
+
+}
+
+.skill h2 {
+  font-size: 28px;
+  color: white;
+  margin: 20px 0;
+}
+
+.skill span {
+  color: rgba(156,53,132,255);
+  display: inline-block;
+  text-align: center; /* center span text */
+}
+
+.skill p {
+  
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 50px;
+    text-align: center;
+    color: white;
+    margin-top: 12%;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.skill-box {
+  border: 0.1px solid rgba(124, 65, 36, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+  width: 250px;
+  box-shadow: 5px 5px 10px rgba(156,53,132,255),
+              -10px -10px 20px rgba(25, 17, 13, 0.5);
+  transition: all 0.3s ease;
+  animation: floatIcon 2s ease-in-out infinite;
+}
+
+.skill-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 15px 15px 30px rgba(156,53,132,255),
+              5px 5px 10px rgba(124, 65, 36, 0.5);
+}
+
+.skill-box h3 {
+  text-align: center;
+}
+
+.skill-box ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left; /* keeps bullets aligned */
+}
+
+.skill-box ul li {
+  margin: 0.4rem 0;
+  position: relative;
+  padding-left: 15px;
+}
+
+.skill-box ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+/* --- Tablet Screens (≥768px) --- */
+@media (min-width: 768px) {
+  .skill h2 {
+    font-size: 34px;
+  }
+
+  .skill p {
+    font-size: 16px;
+    padding: 0 40px;
+  }
+
+  .skill-list {
+    gap: 60px;
+  }
+}

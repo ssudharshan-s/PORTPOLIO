@@ -1,0 +1,130 @@
+/* Base (Mobile first) */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* stack on mobile */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.content {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.content .con {
+    font-size: 16px;
+    color: #fff;
+    border: #fff 1px solid;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+}
+
+.content .con:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.image .img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+    0% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Tablet (≥768px) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* side by side */
+        height: auto;
+        padding: 40px 20px;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 50%;
+        padding: 40px;
+        text-align: left;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p,
+    .content .con {
+        font-size: 18px;
+    }
+
+    .image {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .image .img {
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+    }
+}
+
+/* Desktop / Laptop (≥1024px) */
+@media (min-width: 1024px) {
+    .container {
+        height: 50%;
+        padding: 60px 60px;
+    }
+
+    .content {
+        font-size: 24px;
+        padding: 60px;
+    }
+
+    .content h2 {
+        font-size: 35px;
+    }
+
+    .content p,
+    .content .con {
+        font-size: 20px;
+    }
+
+    .image .img {
+        width: 70%;
+        margin-left: 5%;
+        height: auto;
+    }
+}
