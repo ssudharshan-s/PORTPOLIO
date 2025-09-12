@@ -67,7 +67,7 @@
 
 .education-header:hover {
     box-shadow: 5px 5px 10px rgba(156,53,132,255);
-    transform: scale(1.20);
+    transform: scale(1.10);
 }
 
 /* --- Tablet Screens (≥768px) --- */
