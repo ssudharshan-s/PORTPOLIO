@@ -101,7 +101,7 @@
     }
 }
 
-/* Desktop / Laptop (≥1024px) */
+
 @media (min-width: 1024px) {
     .container {
         height: 50%;
