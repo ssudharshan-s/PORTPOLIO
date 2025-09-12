@@ -16,8 +16,9 @@ const Navbar = () => {
                 <Link to="/Home" state={{scrollTo:'Hero-section'}} className="nav-link">Home</Link>
                 <Link to="/" state={{scrollTo:'Education-section'}} className="nav-link" >Education</Link>
                 <Link to="/" state={{scrollTo:'Skills-section'}}className="nav-link">Skills</Link>
-                <Link to="/" className="nav-link" >Project</Link>
+
                 <Link to="/" state={{scrollTo:'Contact-section'}}className="nav-link">Contact</Link>
+                <Link to="/" className="nav-link" ></Link>
             </nav>
         </header>
     )
