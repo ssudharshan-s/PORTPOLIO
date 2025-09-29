@@ -24,9 +24,9 @@ const ContactAss = () => {
         e.preventDefault();
 
         try{
-            const response = await fetch("https://portpolio-qabp.onrender.com/api/contact",{
+            const response = await fetch("https://portpolio-s.onrender.com/api/contact",{
                 method: "POST",
-                
+
                 headers: { "Content-Type": "application/json"},
                 body: JSON.stringify(formData),
             });
